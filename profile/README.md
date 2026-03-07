@@ -23,7 +23,7 @@ We build and maintain **Graviton**â€”the ultimate open-source inference engineâ€
 
 Check out our flagship engine repository and join the revolution:
 
-[![Graviton Engine](https://github-readme-stats.vercel.app/api/pin/?username=opengraviton&repo=graviton&theme=radical&bg_color=050508&title_color=B882FF&text_color=9CA3AF&icon_color=8A2BE2)](https://github.com/opengraviton/graviton)
+[![Graviton Engine](https://opengraph.githubassets.com/1/opengraviton/graviton)](https://github.com/opengraviton/graviton)
 
 ```bash
 # How to run locally today
