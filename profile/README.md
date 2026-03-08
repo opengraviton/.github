@@ -1,28 +1,26 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/opengraviton/graviton/main/assets/logo.svg" alt="OpenGraviton" width="200" />
   <h1>OpenGraviton</h1>
-  <p><strong>AI belongs to everyone — not just those who can afford a GPU cluster.</strong></p>
-  <p>We build the open-source engine that runs powerful AI models on your own computer.</p>
+  <p><strong>500B+ parameter LLMs. Locally. On a Mac Mini.</strong></p>
+  <p>The most powerful AI shouldn't belong to corporations. We're making it accessible to everyone.</p>
 </div>
 
 <br />
 
-## The Problem
+## The Mission
 
-Today's best AI models need GPU servers costing $10,000–$100,000. The most powerful AI is locked behind a paywall.
+AI is being monopolized. The most capable models are locked behind cloud APIs and corporate gatekeepers.
 
-## Our Solution
-
-**Graviton** compresses and streams large AI models so they fit on your hardware. A 72B model that needs 144 GB? Graviton fits it into **36 GB** on a Mac. No GPU cluster. No cloud bill. Just your laptop.
+**Graviton breaks that barrier.** Open-source engine that takes the models corporations run on server farms and makes them run on your desk. A 72B model compressed to **36 GB**, streamed layer by layer onto a Mac Mini.
 
 ## What It Does
 
 | Feature | What You Get |
 |---|---|
-| **Run 70B+ models on a laptop** | 72B model compressed from 144 GB to 36 GB — runs on 64 GB Mac |
+| **Run 500B+ models locally** | Stream, compress, and run models never meant for consumer hardware |
 | **Shrink models up to 10x** | 16-bit to 4-bit or 1.58-bit — 4–10x smaller |
-| **Stream models that don't fit** | Loads one layer at a time, compresses each, never needs full model in memory |
-| **Fast generation** | 2–3x faster with speculative decoding and dynamic sparsity |
+| **Stream what doesn't fit** | Loads one layer at a time, compresses each — never needs full model in memory |
+| **2–3x faster generation** | Speculative decoding + dynamic sparsity |
 | **Private and free** | Runs locally. No cloud. No API keys. No monthly bill |
 | **Built for AI agents** | Headless REST API for programmatic access |
 
@@ -38,7 +36,7 @@ Today's best AI models need GPU servers costing $10,000–$100,000. The most pow
 
 | Scenario | Without Graviton | With Graviton |
 |---|---|---|
-| **Qwen2.5-72B** | 144 GB — needs $10K GPU server | **36 GB** — runs on 64 GB Mac |
+| **Qwen2.5-72B** | 144 GB — locked in data centers | **36 GB** — runs on your Mac |
 | **TinyLlama-1.1B** | 2.05 GB | **0.24 GB** (8.4x smaller) |
 
 ## Get Started — One Command
