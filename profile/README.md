@@ -19,6 +19,14 @@ We build and maintain **Graviton**—the ultimate open-source inference engine�
 - 🧠 **Speculative Decoding**: Shattering autoregressive memory-bandwidth bottlenecks by verifying parallel predictions on a target model.
 - 🎛️ **Dynamic Sparsity**: Firing only the absolute necessary neurons (Top-K) and Routing (MoE) dynamically on the fly.
 
+### 🖥️ First Inference — It Works!
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/opengraviton/graviton/main/assets/first-inference.png" alt="Graviton running TinyLlama-1.1B inference on Apple Silicon" width="100%" />
+</p>
+
+<p align="center"><em>TinyLlama-1.1B running locally via Graviton on Apple M1 Max — 65 tokens in 2.99s (21.8 tok/s)</em></p>
+
 ### 🚀 Get Started
 
 Check out our flagship engine repository and join the revolution:
@@ -35,18 +43,7 @@ pip install -e ".[all]"
 python3 -m graviton.cli.main info
 
 # Run a model locally
-python3 -m graviton.cli.main run 'TinyLlama/TinyLlama-1.1B-Chat-v1.0' -p 'Explain quantum gravity'
-```
-
-**Expected output:**
-```
-Model ready: 1.10B params, 2.05 GB on mps
-Prompt: Explain quantum gravity
---------------------------------------------------
-Generation: Quantum gravity is the hypothetical theory that aims
-to reconcile quantum mechanics and general relativity...
---------------------------------------------------
-Generated 42 tokens in 2.83s (14.8 tok/s)
+python3 -m graviton.cli.main run 'TinyLlama/TinyLlama-1.1B-Chat-v1.0' -p 'Explain quantum computing in one sentence:'
 ```
 
 > For gated models (LLaMA, Mixtral, etc.), you'll need a HuggingFace token. See the [Graviton README](https://github.com/opengraviton/graviton#huggingface-setup-for-downloading-models) for setup instructions.
