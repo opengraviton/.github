@@ -20,6 +20,7 @@ We build and maintain **Graviton**—the ultimate open-source inference engine�
 - 🧠 **Speculative Decoding**: Self-speculative with layer-skip draft model. The framework also supports external draft models for 2-3x throughput gains.
 - 🎛️ **Dynamic Sparsity**: Firing only the absolute necessary neurons (Top-K) and Routing (MoE) dynamically on the fly.
 - 🧪 **88 Tests, Full Coverage**: Every component battle-tested — attention masks, quantizer device consistency, speculative rollback, KV cache fast-path, and end-to-end model inference.
+- 🖥️ **[Graviton UI](https://github.com/opengraviton/graviton-ui)**: Beautiful dark-themed chat interface — enter a HuggingFace token + model ID, pick quantization settings, and chat with real-time streaming + live tok/s counter.
 
 ### 🖥️ First Inference — It Works!
 
@@ -31,9 +32,10 @@ We build and maintain **Graviton**—the ultimate open-source inference engine�
 
 ### 🚀 Get Started
 
-Check out our flagship engine repository and join the revolution:
+Check out our repositories and join the revolution:
 
 [![Graviton Engine](https://opengraph.githubassets.com/1/opengraviton/graviton)](https://github.com/opengraviton/graviton)
+[![Graviton UI](https://opengraph.githubassets.com/1/opengraviton/graviton-ui)](https://github.com/opengraviton/graviton-ui)
 
 ```bash
 # Clone and install
@@ -54,6 +56,10 @@ python3 -m graviton.cli.main run 'TinyLlama/TinyLlama-1.1B-Chat-v1.0' \
 
 # Run the test suite
 pytest tests/ -v   # 88 tests in ~2 seconds
+
+# Or use the Web UI instead of CLI
+pip install graviton-ui
+graviton-ui          # opens http://localhost:7860
 ```
 
 > For gated models (LLaMA, Mixtral, etc.), you'll need a HuggingFace token. See the [Graviton README](https://github.com/opengraviton/graviton#huggingface-setup-for-downloading-models) for setup instructions.
