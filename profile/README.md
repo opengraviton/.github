@@ -19,7 +19,7 @@ We build and maintain **Graviton**—the ultimate open-source inference engine�
 - 💿 **Layer Streaming via MMAP**: Surpassing physical RAM limits by directly memory-mapping neural networks from your NVMe SSD.
 - 🧠 **Speculative Decoding**: Self-speculative with layer-skip draft model. The framework also supports external draft models for 2-3x throughput gains.
 - 🎛️ **Dynamic Sparsity**: Firing only the absolute necessary neurons (Top-K) and Routing (MoE) dynamically on the fly.
-- 🧪 **83 Tests, Full Coverage**: Every component battle-tested — attention masks, quantizer device consistency, speculative rollback, KV cache, and end-to-end model inference.
+- 🧪 **88 Tests, Full Coverage**: Every component battle-tested — attention masks, quantizer device consistency, speculative rollback, KV cache fast-path, and end-to-end model inference.
 
 ### 🖥️ First Inference — It Works!
 
@@ -53,7 +53,7 @@ python3 -m graviton.cli.main run 'TinyLlama/TinyLlama-1.1B-Chat-v1.0' \
     -p 'Hello world' --speculative --spec-tokens 4
 
 # Run the test suite
-pytest tests/ -v   # 83 tests in ~1 second
+pytest tests/ -v   # 88 tests in ~2 seconds
 ```
 
 > For gated models (LLaMA, Mixtral, etc.), you'll need a HuggingFace token. See the [Graviton README](https://github.com/opengraviton/graviton#huggingface-setup-for-downloading-models) for setup instructions.
