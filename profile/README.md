@@ -23,6 +23,7 @@ AI is being monopolized. The most capable models are locked behind cloud APIs an
 | **2–3x faster generation** | Speculative decoding + dynamic sparsity |
 | **Private and free** | Runs locally. No cloud. No API keys. No monthly bill |
 | **Built for AI agents** | Headless REST API for programmatic access |
+| **Graviton-Native** | Train BitNet & MoE from scratch — 350M in 66 MB, 500B on 32 GB RAM |
 
 ## First Inference — It Works!
 
@@ -57,6 +58,7 @@ REST API on `0.0.0.0:7860` with `/api/models/load`, `/api/models/status`, `/api/
 
 [![Graviton Engine](https://opengraph.githubassets.com/1/opengraviton/graviton)](https://github.com/opengraviton/graviton)
 [![Graviton UI](https://opengraph.githubassets.com/1/opengraviton/graviton-ui)](https://github.com/opengraviton/graviton-ui)
+[![Graviton-Native](https://opengraph.githubassets.com/1/opengraviton/graviton-native)](https://github.com/opengraviton/graviton-native)
 
 > For gated models (LLaMA, Mixtral), see the [HuggingFace setup guide](https://github.com/opengraviton/graviton#huggingface-setup-for-downloading-models).
 
